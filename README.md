@@ -46,9 +46,9 @@ TestNG is a testing framework for Java that is designed to be more flexible and 
 
 ## Project scenario:
 
-**User will log in using valid phone number and PIN**
+- User will log in using valid phone number and PIN
 
-**Then store will be selected to view report**
+- Then store will be selected to view report
 
 ## Prerequisites:
 
