@@ -44,6 +44,19 @@ TestNG is a testing framework for Java that is designed to be more flexible and 
 - Hit the following command into the terminal:
 ```gradle clean test```
 
+## Project scenario:
+
+**User will log in using valid phone number and PIN**
+
+**Then store will be selected to view report**
+
+## Prerequisites:
+
+- Install Android Studio latest version
+- Install Appium Inspector
+- Install jdk 8 or any LTS version
+- Configure ANDROID_HOME, JAVA_HOME and GRADLE_HOME
+
 ## Generate and serve the Allure report:
 - Generate the report:
   ```
