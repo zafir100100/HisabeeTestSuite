@@ -37,3 +37,10 @@ TestNG is a testing framework for Java that is designed to be more flexible and 
   allure serve allure-results
   ```
 
+## Allure Report:
+
+![1](https://github.com/zafir100100/HisabeeTestSuite/assets/55599023/b596f475-7443-4303-9123-aa7a8781ddec)
+
+![2](https://github.com/zafir100100/HisabeeTestSuite/assets/55599023/d94d545d-76a5-4674-93f7-097eb036df4d)
+
+![3](https://github.com/zafir100100/HisabeeTestSuite/assets/55599023/74cb2141-ad99-429a-ad26-dc3fc6d30c6f)
