@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.time.Duration;
 
 public class StoreSelectionPage {
-    @FindBy(xpath = "(//android.widget.Button[@resource-id=\"com.hishabee.business:id/shopListItemSelect\"])[1]")
+    @FindBy(xpath = "(//android.widget.Button[@resource-id='" + Setup.PACKAGE_ID + ":id/shopListItemSelect'])[1]")
     WebElement btnShopSelect;
 
     AndroidDriver driver;

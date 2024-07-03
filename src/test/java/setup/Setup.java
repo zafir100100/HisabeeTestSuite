@@ -32,8 +32,6 @@ public class Setup {
     @BeforeTest
     public AndroidDriver setUp() throws MalformedURLException {
         ApplicationConfiguration config = AppConfigLoader.getConfig();
-//        System.out.println("Automation Name: " + config.getDesiredCapabilities().getAutomationName());
-//        System.out.println("Appium Server URL: " + config.getAppiumServerUrl());
 
         DesiredCapabilities cap = getDesiredCapabilities(config.getDesiredCapabilities());
 
