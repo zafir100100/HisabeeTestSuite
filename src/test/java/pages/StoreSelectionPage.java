@@ -13,34 +13,26 @@ import utils.Utils;
 import java.io.IOException;
 import java.time.Duration;
 
-public class LoginPage {
-    @FindBy(id = Setup.PACKAGE_ID + ":id/welcomeMobile")
-    WebElement btnNumberInput;
-
-    @FindBy(id = Setup.PACKAGE_ID + ":id/welcomeProceed")
-    WebElement btnSubmit;
+public class StoreSelectionPage {
+    @FindBy(xpath = "(//android.widget.Button[@resource-id=\"com.hishabee.business:id/shopListItemSelect\"])[1]")
+    WebElement btnShopSelect;
 
     AndroidDriver driver;
     WebDriverWait wait;
 
-    public LoginPage(AndroidDriver driver) {
+    public StoreSelectionPage(AndroidDriver driver) {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    public void setPhoneNumber(String phoneNumber) throws IOException {
+    public void setStore() throws IOException {
         try {
-            wait.until(ExpectedConditions.elementToBeClickable(btnNumberInput));
-            btnNumberInput.click();
-            btnNumberInput.clear();
-            btnNumberInput.sendKeys(phoneNumber);
-
-            wait.until(ExpectedConditions.elementToBeClickable(btnSubmit));
-            btnSubmit.click();
-            wait.until(ExpectedConditions.invisibilityOf(btnSubmit));
+            wait.until(ExpectedConditions.elementToBeClickable(btnShopSelect));
+            btnShopSelect.click();
+            wait.until(ExpectedConditions.invisibilityOf(btnShopSelect));
         } catch (Exception e) {
-            System.err.println("General error occurred in set phone number method - " + e.getMessage());
+            System.err.println("General error occurred in set store method - " + e.getMessage());
             Utils.takeScreenShot(driver);
         }
     }
