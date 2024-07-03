@@ -1,0 +1,9 @@
+<suite thread-count="1" verbose="1" name="Hisabee app Automation">
+
+    <test name="Login automation">
+        <classes>
+            <class name="testrunner.LoginTests"/>
+        </classes>
+    </test>
+
+</suite>
