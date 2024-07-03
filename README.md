@@ -21,9 +21,26 @@ TestNG is a testing framework for Java that is designed to be more flexible and 
 
 ## How to Run This Project
 
-- **Clone this project**
-
-- **Run the tests:**
+- Clone this project
+- Open Android Studio and Open the APK file:
+- Set required configuration
+- Hit this command in cmd for checking the connectivity with emulator : ``adb devices``
+- Open Appium Server with following command: ```appium -p 4723```
+- Open Appium Inspector
+- Set desired capability in json format:
+``` 
+ {
+    "appium:automationName": "UiAutomator2",
+    "appium:appPackage": "com.hishabee.business",
+    "appium:appActivity": "com.hishabee.business.SplashScreen.SplashScreen",
+    "appium:platformName": "Android",
+    "appium:platformVersion": "7.1.2",
+    "appium:deviceName": "emulator-5554",
+    "appium:app": "D:\\office\\app-release.apk",
+    "appium:autoGrantPermissions": true
+  }
+```
+- Open Intellij Idea
 - Hit the following command into the terminal:
 ```gradle clean test```
 
