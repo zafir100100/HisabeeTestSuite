@@ -13,8 +13,8 @@ TestNG is a testing framework for Java that is designed to be more flexible and 
 ## Technology Used:
 - Selenium WebDriver
 - TestNG Framework
-- Java
-- Gradle
+- Java (17)
+- Gradle (8.4)
 - IntelliJ IDEA
 - Allure
 
