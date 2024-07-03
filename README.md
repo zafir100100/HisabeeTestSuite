@@ -12,11 +12,12 @@ TestNG is a testing framework for Java that is designed to be more flexible and 
 
 ## Technology Used:
 - Selenium WebDriver
-- TestNG Framework
+- TestNG Framework (7.10.2)
 - Java (17)
 - Gradle (8.4)
 - IntelliJ IDEA
 - Allure
+- Appium (2.10.3)
 
 ## How to Run This Project
 
